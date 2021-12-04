@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot as expected 1`] = `
+<div
+  className="font-sans"
+>
+  <div
+    className="hidden md:block"
+  >
+    <div
+      aria-orientation="horizontal"
+      className="flex my-10 p-1 bg-brand-100 rounded-xl space-x-1"
+      role="tablist"
+    >
+      <button
+        aria-selected={false}
+        className="py-2.5 w-full text-brand-700 text-sm font-bold tracking-wider leading-5 rounded-xl uppercase transition-colors ease-linear focus:outline-none focus:ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-brand-400 hover:bg-brand-500/20"
+        id="headlessui-tabs-tab-13"
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Cooking Instructions
+      </button>
+      <button
+        aria-selected={false}
+        className="py-2.5 w-full text-brand-700 text-sm font-bold tracking-wider leading-5 rounded-xl uppercase transition-colors ease-linear focus:outline-none focus:ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-brand-400 hover:bg-brand-500/20"
+        id="headlessui-tabs-tab-14"
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Nutrition Info
+      </button>
+      <button
+        aria-selected={false}
+        className="py-2.5 w-full text-brand-700 text-sm font-bold tracking-wider leading-5 rounded-xl uppercase transition-colors ease-linear focus:outline-none focus:ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-brand-400 hover:bg-brand-500/20"
+        id="headlessui-tabs-tab-15"
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        Ingredients
+      </button>
+    </div>
+    <div />
+  </div>
+  <div
+    className="block md:hidden"
+  >
+    <div
+      className="mt-4 space-y-2"
+    >
+      <button
+        aria-expanded={false}
+        className="text-md flex items-center justify-between px-4 py-2 w-full text-left text-brand-900 font-bold bg-brand-100 rounded-lg transition-colors ease-in-out hover:bg-brand-200 focus:outline-none focus-visible:ring focus-visible:ring-brand-500 focus-visible:ring-opacity-75"
+        id="headlessui-disclosure-button-19"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        type="button"
+      >
+        <span>
+          Cooking Instructions
+        </span>
+         
+        <svg
+          aria-hidden="true"
+          className="w-5 h-5 text-brand-900"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        aria-expanded={false}
+        className="text-md flex items-center justify-between px-4 py-2 w-full text-left text-brand-900 font-bold bg-brand-100 rounded-lg transition-colors ease-in-out hover:bg-brand-200 focus:outline-none focus-visible:ring focus-visible:ring-brand-500 focus-visible:ring-opacity-75"
+        id="headlessui-disclosure-button-21"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        type="button"
+      >
+        <span>
+          Nutrition Info
+        </span>
+         
+        <svg
+          aria-hidden="true"
+          className="w-5 h-5 text-brand-900"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        aria-expanded={false}
+        className="text-md flex items-center justify-between px-4 py-2 w-full text-left text-brand-900 font-bold bg-brand-100 rounded-lg transition-colors ease-in-out hover:bg-brand-200 focus:outline-none focus-visible:ring focus-visible:ring-brand-500 focus-visible:ring-opacity-75"
+        id="headlessui-disclosure-button-23"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        type="button"
+      >
+        <span>
+          Ingredients
+        </span>
+         
+        <svg
+          aria-hidden="true"
+          className="w-5 h-5 text-brand-900"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
