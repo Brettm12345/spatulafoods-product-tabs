@@ -1,6 +1,6 @@
 {
   "name": "spatulafoods-product-tabs",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "This project is created using Direflow",
   "main": "build/direflowBundle.js",
   "files": [
@@ -9,7 +9,7 @@
   "scripts": {
     "build": "direflow-scripts build",
     "build:lib": "direflow-scripts build:lib",
-    "format": "prettier src/direflow-components/spatulafoods-product-tabs/**/*.{ts,tsx} --write",
+    "format": "prettier src/direflow-components/spatulafoods-product-tabs/**/*.{ts,tsx} *.js *.json --write",
     "start": "direflow-scripts start",
     "test": "direflow-scripts test",
     "tw:dev": "tailwindcss --postcss ./postcss.config.js -i src/direflow-components/spatulafoods-product-tabs/styles/main.css -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch"
