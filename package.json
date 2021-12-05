@@ -1,65 +1,17 @@
 {
   "name": "spatulafoods-product-tabs",
+  "version": "1.0.1",
   "description": "This project is created using Direflow",
-  "version": "1.0.0",
-  "private": true,
+  "main": "build/direflowBundle.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
-    "start": "direflow-scripts start",
     "build": "direflow-scripts build",
     "build:lib": "direflow-scripts build:lib",
-    "tw:dev": "tailwindcss -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch",
-    "test": "direflow-scripts test"
-  },
-  "prettier": {
-    "arrowParens": "avoid",
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "bracketSpacing": false,
-    "semi": true,
-    "plugins": [
-      "prettier-plugin-tailwind"
-    ]
-  },
-  "dependencies": {
-    "@headlessui/react": "^1.4.2",
-    "@heroicons/react": "^1.0.5",
-    "@tailwindcss/typography": "^0.4.1",
-    "@types/node": "12.7.8",
-    "@types/react": "16.9.3",
-    "@types/react-dom": "16.9.1",
-    "classnames": "^2.3.1",
-    "direflow-component": "3.5.5",
-    "direflow-scripts": "3.5.5",
-    "headlessui": "^0.0.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-scripts": "3.4.1",
-    "tailwindcss-children": "^2.1.0"
-  },
-  "devDependencies": {
-    "@types/jest": "24.0.18",
-    "@types/react-test-renderer": "16.9.1",
-    "@typescript-eslint/eslint-plugin": "^2.19.0",
-    "@typescript-eslint/parser": "^2.19.0",
-    "autoprefixer": "^10.4.0",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.18.0",
-    "jest-environment-jsdom-fourteen": "0.1.0",
-    "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2",
-    "prettier": "^2.5.0",
-    "prettier-plugin-tailwind": "^2.2.12",
-    "react-app-rewired": "2.1.3",
-    "react-test-renderer": "16.9.0",
-    "tailwindcss": "^2.2.19",
-    "to-string-loader": "^1.1.6",
-    "ts-loader": "^6.2.2",
-    "typescript": "^4.5.2",
-    "webpack-cli": "^3.3.11"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "direflow-scripts start",
+    "test": "direflow-scripts test",
+    "tw:dev": "tailwindcss --postcss ./postcss.config.js -i src/direflow-components/spatulafoods-product-tabs/styles/main.css -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch"
   },
   "browserslist": {
     "production": [
@@ -73,10 +25,64 @@
       "last 1 safari version"
     ]
   },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "plugins": [
+      "prettier-plugin-tailwind"
+    ],
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "jest": {
     "setupFilesAfterEnv": [
       "direflow-scripts/direflow-jest.config.js"
     ]
+  },
+  "dependencies": {
+    "@brettm12345/direflow-component": "^3.5.7",
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "classnames": "^2.3.1",
+    "direflow-component": "3.5.5",
+    "direflow-scripts": "3.5.5",
+    "headlessui": "^0.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.8",
+    "@types/react": "16.9.3",
+    "@types/react-dom": "16.9.1",
+    "@types/react-test-renderer": "16.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "autoprefixer": "^10.4.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "jest-environment-jsdom-fourteen": "0.1.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.5.0",
+    "prettier-plugin-tailwind": "^2.2.12",
+    "react-app-rewired": "2.1.3",
+    "react-test-renderer": "16.9.0",
+    "tailwindcss": "^2.2.19",
+    "tailwindcss-children": "^2.1.0",
+    "to-string-loader": "^1.1.6",
+    "ts-loader": "^6.2.2",
+    "typescript": "^4.5.2",
+    "webpack-cli": "^3.3.11"
   },
   "config-overrides-path": "direflow-webpack.js"
 }
