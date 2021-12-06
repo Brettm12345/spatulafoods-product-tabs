@@ -13,7 +13,7 @@
     "format": "prettier src/direflow-components/spatulafoods-product-tabs/**/*.{ts,tsx} *.js *.json --write",
     "postinstall": "husky install",
     "lint": "eslint --fix src/**/*.{ts,tsx}",
-    "pre-commit": "yarn format && yarn lint",
+    "pre-commit": "yarn test:coverage && yarn format && yarn lint",
     "start": "direflow-scripts start",
     "test": "direflow-scripts test",
     "test:coverage": "direflow-scripts test --coverage",
