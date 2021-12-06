@@ -16,6 +16,14 @@
     />
   </a>
   <a
+    href="https://github.com/Brettm12345/spatulafoods-product-tabs/actions/workflows/codeql-analysis.yml"
+  >
+    <img
+      alt="CodeQL"
+      src="https://github.com/Brettm12345/spatulafoods-product-tabs/actions/workflows/codeql-analysis.yml/badge.svg"
+    />
+  </a>
+  <a
     href="https://codeclimate.com/github/Brettm12345/spatulafoods-product-tabs/maintainability"
   >
     <img
