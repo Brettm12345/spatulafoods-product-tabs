@@ -49,16 +49,17 @@
       "./direflow-brettm12345-jest-config.js"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "src/**/*.{ts, tsx}": [
-      "yarn pre-commit"
-    ],
-    "*.md": [
-      "markdownlint"
-    ],
-    "./**/*.md": [
-      "markdownlint"
-    ]
+    "src/**/*.{ts, tsx}": "yarn pre-commit",
+    "*.md": "markdownlint",
+    "./**/*.md": "markdownlint",
+    "package.json": "sort-package-json"
+
   },
   "dependencies": {
     "@brettm12345/direflow-component": "3.5.8",
