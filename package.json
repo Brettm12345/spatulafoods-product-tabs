@@ -20,10 +20,22 @@
     "tw:dev": "tailwindcss --postcss ./postcss.config.js -i src/direflow-components/spatulafoods-product-tabs/styles/main.css -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch"
   },
   "lint-staged": {
-    "src/**/*.{ts, tsx}": "yarn pre-commit",
-    "*.md": "markdownlint",
-    "./**/*.md": "markdownlint",
-    "package.json": "sort-package-json"
+    "src/**/*.{ts, tsx}": [
+      "yarn pre-commit",
+      "git add"
+    ],
+    "*.md": [
+      "markdownlint",
+      "git add"
+    ],
+    "./**/*.md": [
+      "markdownlint",
+      "git add"
+    ],
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [

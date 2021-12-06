@@ -46,15 +46,17 @@ export const NutritionInfo: FC<Product> = ({nutrition, servingSize}) => (
       Per 1 serving {servingSize}
     </caption>
     <thead className="tracking-wider bg-gray-200 uppercase">
-      <th className={row} scope="col">
-        Ingredient
-      </th>
-      <th className={numericRow} scope="col">
-        Amount
-      </th>
-      <th className={numericRow} scope="col">
-        % DV
-      </th>
+      <tr>
+        <th className={row} scope="col">
+          Ingredient
+        </th>
+        <th className={numericRow} scope="col">
+          Amount
+        </th>
+        <th className={numericRow} scope="col">
+          % DV
+        </th>
+      </tr>
     </thead>
     <tbody>
       {Object.entries(nutrition).map(([name, value]) => {

@@ -13,24 +13,26 @@ exports[`matches snapshot as expected 1`] = `
   <thead
     className="tracking-wider bg-gray-200 uppercase"
   >
-    <th
-      className="text-start p-2 md:p-3"
-      scope="col"
-    >
-      Ingredient
-    </th>
-    <th
-      className="text-end p-2 md:p-3"
-      scope="col"
-    >
-      Amount
-    </th>
-    <th
-      className="text-end p-2 md:p-3"
-      scope="col"
-    >
-      % DV
-    </th>
+    <tr>
+      <th
+        className="text-start p-2 md:p-3"
+        scope="col"
+      >
+        Ingredient
+      </th>
+      <th
+        className="text-end p-2 md:p-3"
+        scope="col"
+      >
+        Amount
+      </th>
+      <th
+        className="text-end p-2 md:p-3"
+        scope="col"
+      >
+        % DV
+      </th>
+    </tr>
   </thead>
   <tbody>
     <tr
