@@ -12,6 +12,7 @@
     "format": "prettier src/direflow-components/spatulafoods-product-tabs/**/*.{ts,tsx} *.js *.json --write",
     "start": "direflow-scripts start",
     "test": "direflow-scripts test",
+    "test:coverage": "direflow-scripts test --coverage",
     "tw:dev": "tailwindcss --postcss ./postcss.config.js -i src/direflow-components/spatulafoods-product-tabs/styles/main.css -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch"
   },
   "browserslist": {

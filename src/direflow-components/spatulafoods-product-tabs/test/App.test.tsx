@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import {render, unmountComponentAtNode} from 'react-dom';
 import renderer from 'react-test-renderer';
 import App, {AppProps} from '../App';
 
@@ -8,8 +8,8 @@ const appProps: AppProps = {
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App {...appProps} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  render(<App {...appProps} />, div);
+  unmountComponentAtNode(div);
 });
 
 it('matches snapshot as expected', () => {

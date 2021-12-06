@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot as expected 1`] = `
+<table
+  className="table-auto mx-auto w-full text-sm md:text-base"
+>
+  <caption
+    className="text-start mb-2 text-lg font-bold"
+  >
+    Per 1 serving 
+    250g
+  </caption>
+  <tr
+    className="tracking-wider bg-gray-200 uppercase"
+  >
+    <th
+      className="text-start p-2 md:p-3"
+      scope="col"
+    >
+      Ingredient
+    </th>
+    <th
+      className="text-end p-2 md:p-3"
+      scope="col"
+    >
+      Amount
+    </th>
+    <th
+      className="text-end p-2 md:p-3"
+      scope="col"
+    >
+      % DV
+    </th>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Calories
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      400
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Total Fat
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      15g
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      20%
+    </td>
+  </tr>
+  <tr
+    className="border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 pl-8 md:pl-8"
+    >
+      Saturated Fat
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      3g
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      16%
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 pl-8 md:pl-8"
+    >
+      Trans Fat
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      0g
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Cholesterol
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      105mg
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      36%
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Sodium
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      660mg
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      29%
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Total Carbohydrates
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      42g
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      15%
+    </td>
+  </tr>
+  <tr
+    className="border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 pl-8 md:pl-8"
+    >
+      Dietary Fiber
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      2g
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      7%
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 pl-8 md:pl-8"
+    >
+      Total Sugars
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      3g
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Protein
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      21g
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      42%
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Calcium
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      70mg
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      6%
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Iron
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      2.7mg
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      15%
+    </td>
+  </tr>
+  <tr
+    className="border-b border-gray-200"
+  >
+    <td
+      className="text-start p-2 md:p-3 font-bold"
+    >
+      Potassium
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      510mg
+    </td>
+    <td
+      className="text-end p-2 md:p-3"
+    >
+      10%
+    </td>
+  </tr>
+</table>
+`;

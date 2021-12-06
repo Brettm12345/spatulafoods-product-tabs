@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot as expected 1`] = `
+<div
+  className="prose prose-lg md:prose-xl mx-auto px-4 md:px-0"
+>
+  <ol>
+    <li>
+      In a large non-stick pan, add the paella rice, seafood, and vegetables with 
+      <b>
+        ½ cup water
+      </b>
+      .
+    </li>
+    <li>
+      Cook over 
+      <b>
+        medium high heat
+      </b>
+      , stirring continually until warmed through, roughly 
+      <b>
+        8-10 min
+      </b>
+      .
+    </li>
+    <li>
+      Plate the paella and enjoy!
+    </li>
+  </ol>
+</div>
+`;

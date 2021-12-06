@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot as expected 1`] = `
+<div
+  className="flex flex-col mx-auto px-1 text-lg leading-relaxed space-y-4 md:px-0"
+>
+  <div>
+    <b>
+      Ingredients
+      :
+    </b>
+     
+    Chicken broth, Green beans, Spanish rice, Shrimp peeled tail-on, Chicken thigh boneless skinless, Onion yellow, Chorizo, Mussels precooked, Calamari rings, Tomatoes, Wine white cooking (Wine, Salt, Sulphites), Olive oil, Red bell pepper, Yellow bell pepper, Garlic fresh, Smoked paprika, Canola Oil, Parsley fresh, Kosher salt, Black pepper ground, Bay Leaf, Saffron
+  </div>
+  <div>
+    <b>
+      Contains
+      :
+    </b>
+     
+    Milk, Soy beans, Wheat, Molluscs, Sesame seeds, Sulphites
+  </div>
+</div>
+`;
