@@ -9,12 +9,15 @@
   ],
   "scripts": {
     "build": "direflow-scripts build",
+    "lint": "eslint --fix src/**/*.{ts,tsx}",
     "build:lib": "direflow-scripts build:lib",
     "format": "prettier src/direflow-components/spatulafoods-product-tabs/**/*.{ts,tsx} *.js *.json --write",
+    "pre-commit": "yarn format && yarn lint",
     "start": "direflow-scripts start",
     "test": "direflow-scripts test",
     "test:coverage": "direflow-scripts test --coverage",
-    "tw:dev": "tailwindcss --postcss ./postcss.config.js -i src/direflow-components/spatulafoods-product-tabs/styles/main.css -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch"
+    "tw:dev": "tailwindcss --postcss ./postcss.config.js -i src/direflow-components/spatulafoods-product-tabs/styles/main.css -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch",
+    "postinstall": "husky install"
   },
   "browserslist": {
     "production": [
@@ -46,6 +49,17 @@
       "./direflow-brettm12345-jest-config.js"
     ]
   },
+  "lint-staged": {
+    "src/**/*.{ts, tsx}": [
+      "yarn pre-commit"
+    ],
+    "*.md": [
+      "markdownlint"
+    ],
+    "./**/*.md": [
+      "markdownlint"
+    ]
+  },
   "dependencies": {
     "@brettm12345/direflow-component": "3.5.8",
     "@headlessui/react": "^1.4.2",
@@ -73,7 +87,10 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-react": "^7.18.0",
+    "husky": "^7.0.4",
     "jest-environment-jsdom-fourteen": "1.0.1",
+    "markdownlint-cli": "^0.30.0",
+    "pinst": "^2.1.6",
     "postcss": "^8.4.4",
     "postcss-cli": "^9.0.2",
     "postcss-import": "^14.0.2",
