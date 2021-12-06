@@ -45,7 +45,7 @@ export const NutritionInfo: FC<Product> = ({nutrition, servingSize}) => (
     <caption className="text-start mb-2 text-lg font-bold">
       Per 1 serving {servingSize}
     </caption>
-    <tr className="tracking-wider bg-gray-200 uppercase">
+    <thead className="tracking-wider bg-gray-200 uppercase">
       <th className={row} scope="col">
         Ingredient
       </th>
@@ -55,39 +55,41 @@ export const NutritionInfo: FC<Product> = ({nutrition, servingSize}) => (
       <th className={numericRow} scope="col">
         % DV
       </th>
-    </tr>
-    {Object.entries(nutrition).map(([name, value]) => {
-      if (isCategory(value)) {
-        const {breakdown, total} = value;
-        return (
-          <Fragment key={name}>
-            <NutritionRow
-              dailyValue={total.dailyValue}
-              content={total.content}
-              ingredient={name}
-            />
-            {Object.entries(breakdown).map(([name, value], index, arr) => (
+    </thead>
+    <tbody>
+      {Object.entries(nutrition).map(([name, value]) => {
+        if (isCategory(value)) {
+          const {breakdown, total} = value;
+          return (
+            <Fragment key={name}>
               <NutritionRow
-                key={name}
-                dailyValue={value.dailyValue}
-                content={value.content}
+                dailyValue={total.dailyValue}
+                content={total.content}
                 ingredient={name}
-                isSubIngredient
-                isLastSubIngredient={index === arr.length - 1}
               />
-            ))}
-          </Fragment>
+              {Object.entries(breakdown).map(([name, value], index, arr) => (
+                <NutritionRow
+                  key={name}
+                  dailyValue={value.dailyValue}
+                  content={value.content}
+                  ingredient={name}
+                  isSubIngredient
+                  isLastSubIngredient={index === arr.length - 1}
+                />
+              ))}
+            </Fragment>
+          );
+        }
+        const {dailyValue, content} = value;
+        return (
+          <NutritionRow
+            key={name}
+            dailyValue={dailyValue}
+            content={content}
+            ingredient={name}
+          />
         );
-      }
-      const {dailyValue, content} = value;
-      return (
-        <NutritionRow
-          key={name}
-          dailyValue={dailyValue}
-          content={content}
-          ingredient={name}
-        />
-      );
-    })}
+      })}
+    </tbody>
   </table>
 );

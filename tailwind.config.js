@@ -1,10 +1,15 @@
 const plugin = require('tailwindcss/plugin');
 
-const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
 const withPrefix = (prefix, object) => {
-  if (prefix === '') return object
-  return Object.fromEntries(Object.entries(object).map(([key, value]) => [`${prefix}${capitalize(key)}`, value]))
-}
+  if (prefix === '') return object;
+  return Object.fromEntries(
+    Object.entries(object).map(([key, value]) => [
+      `${prefix}${capitalize(key)}`,
+      value,
+    ])
+  );
+};
 
 /** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
@@ -76,15 +81,17 @@ module.exports = {
       addUtilities(newUtilities);
     }),
     plugin(({addUtilities, config, e}) => {
-      const newUtilities = ['', 'min'].map(prefix => Object.fromEntries(
-        Object.entries(config('theme.width')).map(([key, value]) => [
-          `.${e([prefix, 'size', key].filter(x => x !== '').join('-'))}`,
-          withPrefix(prefix, {
-            width: value,
-            height: value,
-          })
-        ])
-      ));
+      const newUtilities = ['', 'min'].map(prefix =>
+        Object.fromEntries(
+          Object.entries(config('theme.width')).map(([key, value]) => [
+            `.${e([prefix, 'size', key].filter(x => x !== '').join('-'))}`,
+            withPrefix(prefix, {
+              width: value,
+              height: value,
+            }),
+          ])
+        )
+      );
       addUtilities(newUtilities);
     }),
     plugin(({addUtilities, config, e}) => {
