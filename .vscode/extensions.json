@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "dbaeumer.vscode-eslint",
+    "manuth.eslint-language-service",
+    "codezombiech.gitignore",
+    "orta.vscode-jest",
+    "bradlc.vscode-tailwindcss",
+    "davidanson.vscode-markdownlint",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
