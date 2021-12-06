@@ -19,11 +19,6 @@
     "test:coverage": "direflow-scripts test --coverage",
     "tw:dev": "tailwindcss --postcss ./postcss.config.js -i src/direflow-components/spatulafoods-product-tabs/styles/main.css -o src/direflow-components/spatulafoods-product-tabs/styles/tailwind.css --watch"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*.{ts, tsx}": "yarn pre-commit",
     "*.md": "markdownlint",
