@@ -61,7 +61,6 @@ cd spatulafoods-product-tabs
 yarn install
 ```
 
-
 ## Building
 
 ```shell

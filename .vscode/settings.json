@@ -2,7 +2,9 @@
   "jest.jestCommandLine": "yarn test",
   "cSpell.words": [
     "Arborio",
+    "Borales",
     "Bourguignon",
+    "codecov",
     "Direflow",
     "Disodium",
     "focusring",
