@@ -8,6 +8,14 @@
     />
   </a>
   <a
+    href="https://github.com/Brettm12345/spatulafoods-product-tabs/actions/workflows/markdownlint.yml"
+  >
+    <img
+      alt="markdownlint"
+      src="https://github.com/Brettm12345/spatulafoods-product-tabs/actions/workflows/markdownlint.yml/badge.svg"
+    />
+  </a>
+  <a
     href="https://codeclimate.com/github/Brettm12345/spatulafoods-product-tabs/maintainability"
   >
     <img
