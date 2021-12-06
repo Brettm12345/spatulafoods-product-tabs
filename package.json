@@ -1,6 +1,6 @@
 {
   "name": "spatulafoods-product-tabs",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "This project is created using Direflow",
   "main": "build/direflowBundle.js",
   "files": [
