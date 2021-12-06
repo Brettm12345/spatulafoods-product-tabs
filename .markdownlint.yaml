@@ -1,7 +1,7 @@
 default: true
 line-length:
-  line_length: 92
-  heading_line_length: 80
+  line_length: 300
+  heading_line_length: 300
   code_block_line_length: 80
   code_blocks: true
   tables: true
