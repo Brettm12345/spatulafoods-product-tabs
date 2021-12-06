@@ -1,5 +1,5 @@
 import {Styled} from '@brettm12345/direflow-component';
-import {FC} from 'react';
+import React, {FC} from 'react';
 import styles from './styles/tailwind.css';
 import {DesktopView} from './views/DesktopView';
 import {MobileView} from './views/MobileView';

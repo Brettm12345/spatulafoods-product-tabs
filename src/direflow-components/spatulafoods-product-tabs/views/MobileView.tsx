@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import React, {FC} from 'react';
 import {ChevronDownIcon} from '@heroicons/react/solid';
 import {Disclosure} from '@headlessui/react';
 import classNames from 'classnames';

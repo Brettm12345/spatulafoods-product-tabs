@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import renderer from 'react-test-renderer';
 import {NutritionInfo} from '../../sections/NutritionInfo'

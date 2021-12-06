@@ -1,4 +1,4 @@
-import {FC, Fragment} from 'react';
+import React, {FC, Fragment} from 'react';
 import classNames from 'classnames';
 import {isCategory, Product} from '../data/products';
 

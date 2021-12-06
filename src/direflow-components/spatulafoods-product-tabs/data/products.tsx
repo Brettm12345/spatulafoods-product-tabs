@@ -1,4 +1,4 @@
-import {ReactElement} from 'react';
+import React, {ReactElement} from 'react';
 
 export interface NutritionItem {
   content: `${number}` | `${number}mg` | `${number}g`;
