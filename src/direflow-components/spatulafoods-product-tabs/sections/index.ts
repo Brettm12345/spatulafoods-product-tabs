@@ -7,6 +7,6 @@ import {Ingredients} from './Ingredients';
 type Sections = Record<string, FC<Product>>;
 export const sections: Sections = {
   'Cooking Instructions': CookingInstructions,
-  'Nutrition Info': NutritionInfo,
   Ingredients: Ingredients,
+  'Nutrition Info': NutritionInfo,
 };

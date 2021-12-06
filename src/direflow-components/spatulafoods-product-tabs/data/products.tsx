@@ -9,14 +9,16 @@ export interface NutritionCategory {
   breakdown: Record<string, NutritionItem>;
 }
 
-const formatIngredients = (...ingredients: string[]): string =>
-  `[${ingredients.join(', ')}]`;
+const ingredients = (...ingredients: string[]): string =>
+  `(${ingredients.join(', ')})`;
 
 export type NutritionValue = NutritionCategory | NutritionItem;
 export type Nutrition = Record<string, NutritionValue>;
 export interface Product {
   name: string;
   cookingInstructions: ReactElement;
+  servingSize: `${number}g`;
+  contains: string[];
   nutrition: Nutrition;
   ingredients: string[];
 }
@@ -31,6 +33,15 @@ type Products = Record<ID, Product>;
 export const products: Products = {
   [6966542565568]: {
     name: 'Spanish Saffron-Infused Seafood Paella with Chicken and Chorizo',
+    servingSize: '250g',
+    contains: [
+      'Milk',
+      'Soy beans',
+      'Wheat',
+      'Molluscs',
+      'Sesame seeds',
+      'Sulphites',
+    ],
     cookingInstructions: (
       <ol>
         <li>
@@ -104,33 +115,34 @@ export const products: Products = {
       },
     },
     ingredients: [
-      'Chicken Broth',
-      'Shrimp Peeled Tail On (18-20 Size)',
-      'Green Beans IQF',
-      'Spanish Rice',
-      'Onion Yellow',
-      'Chicken Thigh Boneless Skinless',
+      'Chicken broth',
+      'Green beans',
+      'Spanish rice',
+      'Shrimp peeled tail-on',
+      'Chicken thigh boneless skinless',
+      'Onion yellow',
       'Chorizo',
-      'Calamari Rings',
-      'Mussels Precooked',
-      'Tomato Canned San Marzano',
-      'Wine',
-      `White Cooking ${formatIngredients('Wine', 'Salt', 'Sulphites')}`,
-      'Olive Oil',
-      'Red Bell Pepper',
-      'Yellow Bell Pepper',
-      'Garlic Fresh',
-      'Parsley Fresh',
+      'Mussels precooked',
+      'Calamari rings',
+      'Tomatoes',
+      `Wine white cooking ${ingredients('Wine', 'Salt', 'Sulphites')}`,
+      'Olive oil',
+      'Red bell pepper',
+      'Yellow bell pepper',
+      'Garlic fresh',
+      'Smoked paprika',
       'Canola Oil',
-      'Smoked Paprika',
-      'Kosher Salt',
+      'Parsley fresh',
+      'Kosher salt',
+      'Black pepper ground',
       'Bay Leaf',
-      'Black Pepper Ground',
       'Saffron',
     ],
   },
   [6966534602944]: {
     name: 'Wild Mushroom Truffled Risotto and Parmigiano Reggiano',
+    servingSize: '624g',
+    contains: ['Milk', 'Sulphites'],
     cookingInstructions: (
       <ol>
         <li>
@@ -205,38 +217,38 @@ export const products: Products = {
     },
     ingredients: [
       'Water',
-      'Arborio Rice',
-      'Wine',
-      `White Cooking ${formatIngredients('Wine', 'Salt', 'Sulphates')}`,
-      'Milk Homo',
-      'Cheese Grana Padano Grated',
-      'Shallot Fresh',
-      'Parmesan Reggiano',
+      'Arborio rice',
+      'Mushroom king oyster',
+      'Mushroom whole white',
+      'Mushroom sliced white',
+      'Olive oil extra-virgin',
+      `Wine white cooking ${ingredients('Wine', 'Salt', 'Sulphites')}`,
+      'Mushroom shiitake',
+      'Cheese grana padano grated',
+      'Shallot fresh',
+      'Parmesan reggiano',
       'Cream',
-      'Butter Unsalted',
-      'Truffle Oil',
-      'Kosher Salt',
-      'Black Pepper Ground',
-      'Nutmeg Ground',
-      'Mushroom Whole White',
-      'Dry Parsley Flake',
+      'Butter unsalted',
+      'Truffle oil',
+      'Garlic granulated',
       'Tarragon',
-      'Chives Fresh',
-      'Thyme Fresh',
-      'Mushroom Sliced White',
-      'Mushroom Shiitake',
-      'Mushroom King Oyster',
-      'Olive Oil Extra-Virgin',
-      `Mushroom Seasoning ${formatIngredients(
-        'Mushroom Powder',
+      'Thyme fresh',
+      `Mushroom seasoning ${ingredients(
+        'Mushroom powder',
         'Salt',
         'Mushroom Extract'
       )}`,
-      'Garlic Granulated',
+      'Chives fresh',
+      'Kosher salt',
+      'Dry parsley flake',
+      'Black pepper ground',
+      'Nutmeg ground',
     ],
   },
   [6966527918272]: {
     name: 'Slow Braised Beef Bolognese with Rigatoni and Parmigiano Reggiano',
+    contains: ['Milk', 'Wheat', 'Soy beans', 'Sulphites'],
+    servingSize: '250g',
     cookingInstructions: (
       <ol>
         <li>
@@ -344,6 +356,8 @@ export const products: Products = {
   },
   [6966554099904]: {
     name: 'Braised Beef Bourguignon with Pearl Onions and Pomme Purée',
+    servingSize: '250g',
+    contains: ['Milk', 'Soy', 'Wheat', 'Sulphites'],
     cookingInstructions: (
       <ol>
         <li>
@@ -445,6 +459,8 @@ export const products: Products = {
   },
   [6966538076352]: {
     name: 'Singapore Black Pepper Udon with Shrimp and Gai Lan',
+    contains: ['Milk', 'Wheat', 'Soy beans', 'Crustacean shellfish'],
+    servingSize: '250g',
     cookingInstructions: (
       <ol>
         <li>
@@ -524,7 +540,7 @@ export const products: Products = {
     },
     ingredients: [
       'Udon Noodles',
-      `Frozen ${formatIngredients(
+      `Frozen ${ingredients(
         'Wheat Flower',
         'Water',
         'Modified Tapioca Starch',
@@ -539,7 +555,7 @@ export const products: Products = {
       'Gailan Stem',
       'Butter Unsalted',
       'Red Bell Pepper',
-      `Soy Sauce (Yasama) ${formatIngredients(
+      `Soy Sauce (Yasama) ${ingredients(
         'Water',
         'Soy Beans',
         'Wheat',
@@ -547,7 +563,7 @@ export const products: Products = {
         'Brewing Starter (Aspergillus Sojae)'
       )}`,
       'Scallion',
-      `Shao Hsing Wine ${formatIngredients(
+      `Shao Hsing Wine ${ingredients(
         'Water',
         'Rice',
         'Wheat',
@@ -556,7 +572,7 @@ export const products: Products = {
       )}`,
       'Ginger Fresh',
       'Garlic Fresh',
-      `Oyster Sauce ${formatIngredients(
+      `Oyster Sauce ${ingredients(
         'Water',
         'Sugar',
         'Salt',
@@ -577,6 +593,8 @@ export const products: Products = {
   },
   [6966548365504]: {
     name: 'Pan Seared Tilapia with Roasted White Wine Tomatoes and Herbed Couscous',
+    contains: ['Milk', 'Wheat', 'Soy beans', 'Sulphites'],
+    servingSize: '250g',
     cookingInstructions: (
       <ol>
         <li>

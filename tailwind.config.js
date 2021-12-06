@@ -3,7 +3,10 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   darkMode: false, // or 'media' or 'class'
   mode: 'jit',
-  purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+  purge: [
+    './public/**/*.html',
+    './src/direflow-components/spatulafoods-product-tabs/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   variants: {
     display: [
       'children',
@@ -54,17 +57,6 @@ module.exports = {
 
   plugins: [
     plugin(({addUtilities}) => {
-      const newUtilities = {
-        '.text-end': {
-          textAlign: 'end',
-        },
-        '.text-start': {
-          textAlign: 'start',
-        },
-      };
-      addUtilities(newUtilities, ['responsive', 'hover']);
-    }),
-    plugin(({addUtilities}) => {
       const newUtilities = Object.fromEntries(
         [...Array(100)]
           .map((_, i) => i + 1)
@@ -79,6 +71,30 @@ module.exports = {
     }),
     plugin(({addUtilities, config, e}) => {
       const newUtilities = Object.fromEntries(
+        Object.entries(config('theme.width')).map(([key, value]) => [
+          `.${e(`size-${key}`)}`,
+          {
+            width: value,
+            height: value,
+          },
+        ])
+      );
+      addUtilities(newUtilities);
+    }),
+    plugin(({addUtilities, config, e}) => {
+      const newUtilities = Object.fromEntries(
+        Object.entries(config('theme.width')).map(([key, value]) => [
+          `.${e(`min-size-${key}`)}`,
+          {
+            minWidth: value,
+            minHeight: value,
+          },
+        ])
+      );
+      addUtilities(newUtilities);
+    }),
+    plugin(({addUtilities, config, e}) => {
+      const newUtilities = Object.fromEntries(
         Object.entries(config('theme.space')).map(([key, value]) => [
           `.${e(`col-gap-${key}`)}`,
           {columnGap: value},
@@ -86,7 +102,7 @@ module.exports = {
       );
       addUtilities(newUtilities);
     }),
-
+    require('@neojp/tailwindcss-important-variant'),
     require('@tailwindcss/typography'),
     require('tailwindcss-children'),
   ],

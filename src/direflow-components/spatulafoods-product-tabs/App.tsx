@@ -1,4 +1,4 @@
-import {Styled} from 'direflow-component';
+import {Styled} from '@brettm12345/direflow-component';
 import React, {FC} from 'react';
 import styles from './styles/tailwind.css';
 import {DesktopView} from './views/DesktopView';
@@ -15,8 +15,8 @@ const App: FC<AppProps> = ({productId}) => {
   if (!product) return null;
   return (
     <Styled styles={styles}>
-      <div className="font-sans">
-        <div className="hidden md:block">
+      <div className="font-sans subpixel-antialiased">
+        <div className="hidden md:block w-full max-w-4xl mx-auto">
           <DesktopView product={product} />
         </div>
         <div className="block md:hidden">

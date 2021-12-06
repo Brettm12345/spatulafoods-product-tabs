@@ -2,7 +2,7 @@ import React, {FC, Fragment} from 'react';
 import classNames from 'classnames';
 import {isCategory, Product} from '../data/products';
 
-const rowPadding = 'p-2 md:p-4';
+const rowPadding = 'p-2 md:p-3';
 const numericRow = classNames('text-end', rowPadding);
 const row = classNames('text-start', rowPadding);
 
@@ -40,12 +40,21 @@ const NutritionRow: FC<NutritionRowProps> = ({
   </tr>
 );
 
-export const NutritionInfo: FC<Product> = ({nutrition}) => (
-  <table className="table-auto w-full text-sm md:text-base">
+export const NutritionInfo: FC<Product> = ({nutrition, servingSize}) => (
+  <table className="table-auto mx-auto w-full text-sm md:text-base">
+    <caption className="text-start mb-2 text-lg font-bold">
+      Per 1 serving {servingSize}
+    </caption>
     <tr className="tracking-wider bg-gray-200 uppercase">
-      <th className={row}>Ingredient</th>
-      <th className={numericRow}>Amount</th>
-      <th className={numericRow}>% DV</th>
+      <th className={row} scope="col">
+        Ingredient
+      </th>
+      <th className={numericRow} scope="col">
+        Amount
+      </th>
+      <th className={numericRow} scope="col">
+        % DV
+      </th>
     </tr>
     {Object.entries(nutrition).map(([name, value]) => {
       if (isCategory(value)) {

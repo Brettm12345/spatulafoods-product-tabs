@@ -1,4 +1,4 @@
-const { webpackConfig } = require('direflow-scripts');
+const {webpackConfig} = require('direflow-scripts');
 
 /**
  * Webpack configuration for Direflow Component
@@ -6,5 +6,4 @@ const { webpackConfig } = require('direflow-scripts');
  */
 module.exports = (config, env) => ({
   ...webpackConfig(config, env),
-  // Add your own webpack config here (optional)
 });
