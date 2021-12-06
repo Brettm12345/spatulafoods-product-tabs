@@ -7,16 +7,43 @@
 <spatulafoods-product-tabs productId="1"></spatulafoods-product-tabs>
 ```
 
+## Setup
+
+```shell
+git clone git@github.com:brettm12345/spatulafoods-product-tabs
+cd spatulafoods-product-tabs
+yarn install
+```
+
+
+## Building
+
+```shell
+yarn build
+```
+
 ## Developing
 
 ```shell
-yarn install
 yarn start
 ```
 
 ## Testing
 
 ```shell
-yarn install
 yarn test
 ```
+
+## Changing styles
+
+> This project uses [tailwindcss](https://tailwindcss.com)
+
+### Compiling the styles
+
+```shell
+yarn tw:dev
+```
+
+### Modifying global styles
+
+Edit [`src/direflow-components/spatulafoods-product-tabs/styles/main.css`](https://github.com/Brettm12345/spatulafoods-product-tabs/blob/main/src/direflow-components/spatulafoods-product-tabs/styles/main.css)
