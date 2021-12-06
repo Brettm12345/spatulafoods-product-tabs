@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin');
 
+/** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
   darkMode: false, // or 'media' or 'class'
   mode: 'jit',
@@ -54,7 +55,6 @@ module.exports = {
       },
     },
   },
-
   plugins: [
     plugin(({addUtilities}) => {
       const newUtilities = Object.fromEntries(

@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {Tab} from '@headlessui/react';
 import classNames from 'classnames';
 import {ViewProps} from './types';

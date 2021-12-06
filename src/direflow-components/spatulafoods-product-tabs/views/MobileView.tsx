@@ -1,6 +1,6 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {ChevronDownIcon} from '@heroicons/react/solid';
-import {Disclosure, Transition} from '@headlessui/react';
+import {Disclosure} from '@headlessui/react';
 import classNames from 'classnames';
 import {ViewProps} from './types';
 import {sections} from '../sections';

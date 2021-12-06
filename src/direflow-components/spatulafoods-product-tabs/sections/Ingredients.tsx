@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {Product} from '../data/products';
 
 export const Ingredients: FC<Product> = ({ingredients, contains}) => {

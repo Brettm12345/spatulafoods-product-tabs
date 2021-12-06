@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import App, {AppProps} from '../App';
@@ -15,5 +14,10 @@ it('renders without crashing', () => {
 
 it('matches snapshot as expected', () => {
   const renderTree = renderer.create(<App {...appProps} />).toJSON();
+  expect(renderTree).toMatchSnapshot();
+});
+
+it('Renders nothing when theres no product', () => {
+  const renderTree = renderer.create(<App productId="1" />).toJSON();
   expect(renderTree).toMatchSnapshot();
 });
