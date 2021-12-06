@@ -13,7 +13,7 @@ export const MobileView: FC<ViewProps> = ({product}) => (
           <>
             <Disclosure.Button
               className={classNames(
-                'text-md no-tap-highlight flex items-center justify-between px-4 py-2 w-full text-left text-brand-900 font-bold bg-brand-100 rounded-lg select-none transition-colors ease-in-out',
+                'text-md flex no-tap-highlight items-center justify-between px-4 py-2 w-full text-left text-brand-900 font-bold bg-brand-100 rounded-lg select-none transition-colors ease-in-out',
                 'hover:bg-brand-200 focus:outline-none focus:ring focus:ring-brand-300 focus:ring-opacity-75'
               )}
             >
