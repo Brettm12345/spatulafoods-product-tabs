@@ -28,10 +28,6 @@ jobs:
           CI: false
         with: 
           cmd: build
-      - name: Bump version
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-          cmd: version --patch
       - name: Publish
         uses: Borales/actions-yarn@v2.3.0
         with:
