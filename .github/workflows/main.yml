@@ -24,6 +24,8 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
       - name: Build
         uses: Borales/actions-yarn@v2.3.0
+        env:
+          CI: false
         with: 
           cmd: build
       - name: Bump version
