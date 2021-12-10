@@ -24,13 +24,12 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
       - name: Build
         uses: Borales/actions-yarn@v2.3.0
+        env:
+          CI: false
         with: 
           cmd: build
-      - name: Bump version
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-          cmd: version --patch
       - name: Publish
         uses: Borales/actions-yarn@v2.3.0
         with:
-          cmd: public --access public
+          auth-token: ${{ secrets.NPM_TOKEN }}
+          cmd: publish --access public
