@@ -1175,10 +1175,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@brettm12345/direflow-component@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@brettm12345/direflow-component/-/direflow-component-3.5.8.tgz#4f2b4eb42f908c17b4c00bf14bf2376399f04f0f"
-  integrity sha512-vbm0ZVBv5y8dxUn4eBOTOCo6b49FkxP01Iy9jHGNaWwyX4j1FXdob+WA0a5EMU9RaVB9jWqxWNZr1lKR6H0mRg==
+"@brettm12345/direflow-component@3.5.9":
+  version "3.5.9"
+  resolved "https://registry.yarnpkg.com/@brettm12345/direflow-component/-/direflow-component-3.5.9.tgz#80ebc1179735e1b47c218aad8c5c6070f5dae403"
+  integrity sha512-UZjWbXM5AWWJQXXVw975EnqGK0FD2WGHOxgZIjvkffylf2g8Aa9pPG1rAV61VrUGIuMV57yFpHDv57m4LaWKBw==
   dependencies:
     chalk "2.4.2"
     lodash.clonedeep "4.5.0"
