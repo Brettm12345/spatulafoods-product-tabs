@@ -31,4 +31,4 @@ jobs:
       - name: Publish
         uses: Borales/actions-yarn@v2.3.0
         with:
-          cmd: public --access public
+          cmd: publish --access public
